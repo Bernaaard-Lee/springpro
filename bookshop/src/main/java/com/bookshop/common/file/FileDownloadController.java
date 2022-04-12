@@ -1,18 +1,14 @@
 package com.bookshop.common.file;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.OutputStream;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletResponse;
-
+import net.coobird.thumbnailator.Thumbnails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import net.coobird.thumbnailator.Thumbnails;
+import javax.servlet.http.HttpServletResponse;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.OutputStream;
 
 
 @Controller
@@ -32,8 +28,8 @@ public class FileDownloadController {
 		FileInputStream in=new FileInputStream(image); 
 		byte[] buffer=new byte[1024*8];
 		while(true){
-			int count=in.read(buffer); //���ۿ� �о���� ���ڰ���
-			if(count==-1)  //������ �������� �����ߴ��� üũ
+			int count=in.read(buffer); //버퍼에 읽어들인 문자개수
+			if(count==-1)  //버퍼의 마지막에 도달했는지 체크
 				break;
 			out.write(buffer,0,count);
 		}
