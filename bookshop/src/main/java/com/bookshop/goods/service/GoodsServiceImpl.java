@@ -39,4 +39,13 @@ public class GoodsServiceImpl implements GoodsService{
         goodsMap.put("imageList", imageList);                      // goodsMap에 반영
         return goodsMap;
     }
+    public List<String> keywordSearch(String keyword) throws Exception {
+        List<String> list=goodsDAO.selectKeywordSearch(keyword);
+        return list;
+    }
+
+    public List<GoodsVO> searchGoods(String searchWord) throws Exception{
+        List goodsList=goodsDAO.selectGoodsBySearchWord(searchWord);
+        return goodsList;
+    }
 }

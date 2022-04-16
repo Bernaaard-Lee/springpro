@@ -192,7 +192,7 @@ function fn_order_each_goods(goods_id,goods_title,goods_sales_price,fileName){
 				<tr>
 					<td class="fixed">배송안내</td>
 					<td class="fixed"><strong>[당일배송]</strong> 당일배송 서비스 시작!<br> <strong>[휴일배송]</strong>
-						공휴일은 배송일정에서 제외됩니다.</TD>
+						공휴일은 배송일정에서 제외.</TD>
 				</tr>
 				<tr>
 					<td class="fixed">도착예정일</td>
@@ -260,6 +260,7 @@ function fn_order_each_goods(goods_id,goods_title,goods_sales_price,fileName){
 			</div>
 			<div class="tab_content" id="tab6">
 				<h4>리뷰</h4>
+<%--				게시판기능 있으면? --%>
 			</div>
 		</div>
 	</div>
