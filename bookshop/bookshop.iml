@@ -92,5 +92,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.6.10" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjtools:1.6.10" level="project" />
+    <orderEntry type="library" name="postcode.v2" level="application" />
   </component>
 </module>

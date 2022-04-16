@@ -3,8 +3,13 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+    <settings>
+        <setting name="cacheEnabled" value="false" />
+        <setting name="jdbcTypeForNull" value="NULL" />
+    </settings>
     <typeAliases>
         <typeAlias type="com.bookshop.goods.vo.GoodsVO" alias="goodsVO" />
         <typeAlias type="com.bookshop.goods.vo.ImageFileVO" alias="imageFileVO" />
+        <typeAlias type="com.bookshop.member.vo.MemberVO" alias="memberVO" />
     </typeAliases>
 </configuration>
