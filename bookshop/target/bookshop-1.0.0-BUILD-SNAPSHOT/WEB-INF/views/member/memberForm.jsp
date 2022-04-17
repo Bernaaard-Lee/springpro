@@ -135,7 +135,7 @@ function check_pw(){     // 비밀번호 확인 함수
 <%--				8~16 글자--%>
 				<tr class="dot_line">
 					<td class="fixed_join">비밀번호 *</td>
-					<td><input name="member_pw" id="pw" type="password" size="20" onchange="check_pw()" minlength="8" maxlength="16"/></td>
+					<td><input name="member_pw" id="pw" type="password" size="20" onchange="check_pw()" minlength="8" maxlength="16"/><br> 8~16자의 비밀번호</td>
 				</tr>
 				<tr class="dot_line">
 					<td class="fixed_join">비밀번호확인 *</td>
