@@ -13,5 +13,6 @@
         <typeAlias type="com.bookshop.member.vo.MemberVO" alias="memberVO" />
         <typeAlias type="com.bookshop.cart.vo.CartVO" alias="cartVO" />
         <typeAlias type="com.bookshop.order.vo.OrderVO" alias="orderVO" />
+        <typeAlias type="com.bookshop.mypage.vo.MyPageVO" alias="mypageVO" />
     </typeAliases>
 </configuration>
