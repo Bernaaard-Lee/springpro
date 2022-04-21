@@ -61,7 +61,7 @@
 				
 			},
 			error : function(data, textStatus) {
-				alert("에러가 발생했습니다."+data);
+				alert("로그인 후 이용가능합니다ㅎㅊㅇ."+data);
 			},
 			complete : function(data, textStatus) {
 				//alert("작업을완료 했습니다");
